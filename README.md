@@ -1,13 +1,13 @@
 
 # Budget Manager App
 
-Budgety App built with with React.js and Redux Toolkit. Redux Toolkit is used to efficiently manage the application's state, ensuring a single source of truth for the financial data. This enables smooth data flow and real-time updates across the app. Recharts is used for creating interactive charts to visualize the financial data. The financial data is organized in rows and columns with Material UI Pagination. The app also utilizes LocalStorage, a web API that allows data to be stored locally on the user's device
+Budgetify App built with with React.js and Redux Toolkit. Redux Toolkit is used to efficiently manage the application's state, ensuring a single source of truth for the financial data. This enables smooth data flow and real-time updates across the app. Recharts is used for creating interactive charts to visualize the financial data. The financial data is organized in rows and columns with Material UI Pagination. The app also utilizes LocalStorage, a web API that allows data to be stored locally on the user's device
 
 
 
 # Live demo
 
-http://budgety.vercel.app/
+https://budgetify.vercel.app/
 
 ## Features
 
