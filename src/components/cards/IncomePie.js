@@ -31,7 +31,7 @@ const IncomePie = ({ dataChange, colorChange, handleNoData, CustomTooltip, pieSi
                         fontWeight: 'bold',
                         fill: 'black',
                         textAnchor: 'middle',
-                        fontFamily: 'Inter',
+                        // fontFamily: 'Inter',
                     }}
                 />
                 {colorChange?.map((entry, index) => (

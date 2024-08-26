@@ -249,13 +249,13 @@ handleAddingItem()
             <input
               ref={searchRef}
               type="text"
-              placeholder="Search transactions"
-              className="searchbar"
+              placeholder="Search By Title only"
+       className=" m-1 px-3 py-2 font-medium text-fuchsia-950 border bg-none border-slate-300 rounded-md text-sm shadow-sm  focus:outline-none focus:border-fuchsia-400 focus:ring-1 focus:ring-fuchsia-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 ng-pristine ng-valid ng-touched"
               onChange={handleSearch}
               value={search}
             />
             <div
-              className='cancel-search-btn-expanded'
+              className='cancel-search-btn-expanded font-medium text-fuchsia-950  text-sm pt-2'
               onClick={handleCancel}>
               Cancel
             </div>
@@ -263,24 +263,24 @@ handleAddingItem()
         }
       </motion.div>
 
-      <div className="table-container" ref={tableRef}>
-        <table>
-          <thead>
+      <div  ref={tableRef}>
+        <table className=" w-full text-sm text-left rtl:text-right  rounded-lg">
+          <thead className="text-xs text-white uppercase bg-fuchsia-600 p-5">
             <tr>
               {isDesktop &&
                 <>
-                  <th>Title</th>
-                  <th>Category</th>
+                  <th className="px-6 py-3">Title</th>
+                  <th className="px-6 py-3">Category</th>
                 </>
               }
               {isMobile &&
                 <>
-                  <th>Title/Cat.</th>
+                  <th className="px-6 py-3">Title/Cat.</th>
                 </>
               }
-              <th>Date</th>
-              <th>Amount</th>
-              <th>
+              <th className="px-6 py-3">Date</th>
+              <th className="px-6 py-3">Amount</th>
+              <th className="px-6 py-3">
                 <Tooltip title="Click to search for transactions"
                   placement='top'
                   arrow>
@@ -295,7 +295,7 @@ handleAddingItem()
             </tr>
           </thead>
 
-          <tbody>
+          <tbody className="text-fuchsia-950 text-sm font-semibold table-color divide-y divide-gray-200">
             {transactionPeriod.slice((page - 1) * rowsPerPage, page * rowsPerPage)
               .map((transaction) => (
                 <tr key={transaction.id}
@@ -303,7 +303,7 @@ handleAddingItem()
                 >
                   {isDesktop &&
                     <>
-                      <td>{transaction.title}</td>
+                      <td className="px-6 py-3">{transaction.title}</td>
                       <td>{transaction.category}</td>
                     </>
                   }
@@ -312,18 +312,19 @@ handleAddingItem()
                       <td className="td-mobile">{transaction.title}/<span>{transaction.category}</span></td>
                     </>
                   }
-                  <td>{transaction.date}</td>
+                  <td className="px-6 py-3">{transaction.date}</td>
                   {transaction.type === 'plus' &&
-                    <td>
-                      <span className='amount-plus'>+  </span>
+                    <td className="px-6 py-3 text-green-800" >
+                  
+
                       <NumericFormat value={transaction.amount} displayType="text" thousandSeparator={true} prefix="$" />
                     </td>}
                   {transaction.type === 'min' &&
-                    <td>
-                      <span className='amount-min'>- </span>
+                    <td className="px-6 py-3 text-red-800">
+                  
                       <NumericFormat value={transaction.amount} displayType="text" thousandSeparator={true} prefix="$" />
                     </td>}
-                  <td>
+                  <td className="px-6 py-3">
                     <Tooltip title="Delete"
                       placement='top'
                       arrow>
@@ -358,6 +359,7 @@ handleAddingItem()
           className="pagination"
           variant="outlined"
           shape="rounded"
+          
           count={itemCount}
           onChange={handleChangePage}
           page={page}

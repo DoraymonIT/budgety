@@ -2,34 +2,43 @@
     display: flex;
     flex-direction: column;
     border-radius: 0.7rem;
-    color: var(--text);
+    /* color: var(--text); */
     position: relative;
-    background-color: var(--backgrnd-comp);
+    /* background-color: var(--backgrnd-comp); */
     min-width: 15rem;
-    border-bottom: 2px solid var(--purple);
-    border-right: 2px solid var(--purple);
-    border-left: 2px solid var(--purple);
+    /* border-bottom: 2px solid var(--purple); */
+    /* border-right: 2px solid var(--purple); */
+    /* border-left: 2px solid var(--purple); */
     margin-bottom: 1rem;
 }
 
 .budget-title {
     display: flex;
-    font-weight: bold;
-    font-size: 22px;
+    /* font-weight: bold; */
+    /* font-size: 22px; */
     justify-content: center;
-    background-color: var(--purple);
+    /* background-color: var(--purple); */
     padding: 0.7rem;
-    color: white;
+    /* color: white; */
     border-radius: 0.7rem 0.7rem 0 0;
 }
 
 .budget-total {
     padding: 1rem;
-    font-weight: bold;
-    font-size: 22px;
+    /* font-weight: bold; */
+    /* font-size: 22px; */
     margin: 0 auto;
 }
-
+.balance-color{
+    background: linear-gradient(106.37deg,
+      #f3c6f1 29.63%,
+      #f29a9d 51.55%,
+      #f3c6f1 90.85%);
+}
+.money-button {
+    margin: 8px;
+    height: 21px;
+}
 @media screen and (min-width: 1201px) {
     .budget-total {
         margin-top: 1rem;

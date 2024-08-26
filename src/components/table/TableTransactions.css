@@ -40,8 +40,13 @@
     min-height: 311px;
     height: fit-content;
 }
-
-table {
+.table-color{
+    background: linear-gradient(106.37deg,
+      #f3c6f1 29.63%,
+      #f29a9d 51.55%,
+      #f3c6f1 90.85%);
+}
+/* table {
     width: 100%;
     border-collapse: collapse;
     min-height: 250px;
@@ -90,7 +95,7 @@ td {
     color: black;
     text-overflow: ellipsis;
     white-space: nowrap;
-}
+} */
 
 .added {
     background-color: transparent;

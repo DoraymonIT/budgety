@@ -25,9 +25,7 @@
   height: 4%;
 }
 
-.logo>span>span {
-  /* color: var(--purple); */
-}
+
 
 .logo>img {
   width: 3rem;
@@ -59,17 +57,13 @@
   border-radius: 0.7rem;
   font-size: 14px;
   text-decoration: none;
-  color: black;
 }
 
 .menu-item:hover {
   cursor: pointer;
 }
 
-.active {
-  /* background: #ffffff; */
-  margin-left: 0;
-}
+/*  */
 
 .active::before {
   content: "";
@@ -77,6 +71,7 @@
   height: 100%;
   background: var(--purple);
   margin-right: calc(1rem - 8px);
+  background-color: #86198f  ;
 }
 
 .control-panel {
@@ -120,19 +115,8 @@
   }
 }
 
-.reset-btn:hover,
-.demo-btn:hover {
-  /* border: 0.16em solid var(--purple); */
-}
 
-.arrow {
-  width: 5rem;
-  height: 5rem;
-  color: var(--purple);
-  margin: 0 auto;
-  animation: arrowMove 2s infinite ease-in-out;
-  position: relative;
-}
+
 
 @keyframes arrowMove {
   0% {

@@ -43,7 +43,7 @@ const Sidebar = ({ show, dataExpense, dataIncome, setPage }) => {
 
   const buttonNormal = (<button
     onClick={handleDemo}
-    className="demo-btn text-white bg-indigo-600 hover:bg-blue-700 rounded-md px-10 py-4 text-sm font-medium text-center mb-4  ">Demo
+    className="demo-btn text-white bg-fuchsia-800 hover:bg-fuchsia-600 rounded-md px-10 py-4 text-sm font-medium text-center mb-4  ">Demo
   </button>)
 
   const [afterWelcome, setAfterWelcome] = useState(true)
@@ -70,15 +70,15 @@ const Sidebar = ({ show, dataExpense, dataIncome, setPage }) => {
         <div className="logo">
           <img src={piggybank} alt="logo" />
           <span>
-            <span className="text-3xl font-bold text-indigo-950">Budgetify</span>
+            <span className="text-3xl font-extrabold text-fuchsia-800">Budgetify</span>
           </span>
         </div>
 
         <div className="menu">
           <ul className="menu-items" onClick={handleClick}>
-            <li><NavLink to='/' className="menu-item text-indigo-600 rounded-md hover:bg-indigo-600 hover:text-white px-3 py-2 text-sm font-medium"> <UilEstate /> Dashboard</NavLink></li>
-            <li><NavLink to='/add-income' className="menu-item text-indigo-600 rounded-md hover:bg-indigo-600 hover:text-white px-3 py-2 text-sm font-medium"> <UilPlusCircle /> Add Income</NavLink></li>
-            <li><NavLink to='/add-expense' className="menu-item text-indigo-600 rounded-md hover:bg-indigo-600 hover:text-white px-3 py-2 text-sm font-medium"><UilMinusCircle /> Add Expense</NavLink></li>
+            <li><NavLink to='/' className="menu-item  rounded-md hover:bg-fuchsia-800 hover:text-white px-3 py-2 text-sm font-medium text-fuchsia-950"> <UilEstate /> Dashboard</NavLink></li>
+            <li><NavLink to='/add-income' className="menu-item  rounded-md hover:bg-fuchsia-800 hover:text-white px-3 py-2 text-sm font-medium text-fuchsia-950"> <UilPlusCircle /> Add Income</NavLink></li>
+            <li><NavLink to='/add-expense' className="menu-item  rounded-md hover:bg-fuchsia-800 hover:text-white px-3 py-2 text-sm font-medium text-fuchsia-950"><UilMinusCircle /> Add Expense</NavLink></li>
           </ul>
         </div>
 
@@ -94,7 +94,7 @@ const Sidebar = ({ show, dataExpense, dataIncome, setPage }) => {
           }
           <button
             onClick={handleReset}
-            className="reset-btn border-indigo-600 border  text-indigo-600 rounded-md px-10 py-4 text-sm font-medium text-center  ">Reset
+            className="reset-btn border-fuchsia-800 border  text-fuchsia-800 hover:bg-fuchsia-800 hover:text-white  rounded-md px-10 py-4 text-sm font-medium text-center  ">Reset
           </button>
         </div>
       </div>
